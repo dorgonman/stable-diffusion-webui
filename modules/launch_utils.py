@@ -429,7 +429,7 @@ def prepare_environment():
     if not is_installed("open_clip"):
         run_pip(f"install {openclip_package}", "open_clip")
         startup_timer.record("install open_clip")
-
+    args.reinstall_xformers=True
     if (not is_installed("xformers") or args.reinstall_xformers) and args.xformers:
         run_pip(f"install -U -I --no-deps {xformers_package}", "xformers")
         startup_timer.record("install xformers")

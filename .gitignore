@@ -42,3 +42,5 @@ notification.mp3
 /cache
 trace.json
 /sysinfo-????-??-??-??-??.json
+/_run/logs/stderr.log
+/_run/logs/stdout.log
